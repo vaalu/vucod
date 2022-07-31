@@ -7,14 +7,14 @@
         :to="{ name: 'Home' }"
         class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0"
       >
-        <img alt="Vite logo" src="@/assets/vite-logo.svg" width="36px">
         <span class="ml-3 text-xl dark:text-white">
-          {{ appName }}
+          <h1 class="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-5xl">UL</h1>
         </span>
       </RouterLink>
       <nav
         class="flex flex-wrap items-center justify-center text-base md:ml-auto"
       >
+        <!-- <Features/> -->
         <RouterLink
           v-for="(route, index) in availableRoutes"
           :key="index"
@@ -29,19 +29,13 @@
         >
           {{ route.name }}
         </RouterLink>
-        <RouterLink
+        <!-- <RouterLink
           class="flex items-center justify-center mr-2 text-black w-9 h-9 dark:text-white"
-          to="/aliens"
+          to="/CardComp"
         >
-          <MdiAlien />
-        </RouterLink>
-        <a
-          href="https://github.com/lstoeferle/vite-vue2-windicss-starter"
-          target="_blank"
-          class="flex items-center justify-center mr-2 text-black w-9 h-9 dark:text-white"
-        >
-          <MdiGithub />
-        </a>
+         Card
+        </RouterLink> -->
+
         <button
           class="flex items-center justify-center w-9 h-9 focus:outline-none"
           @click="toggle()"
@@ -57,6 +51,7 @@
 <script setup lang="ts">
 import { computed, getCurrentInstance } from 'vue'
 import { routes } from '@/router'
+import '../assets/styles/styles.css';
 
 // Import config from .env
 const appName = import.meta.env.VITE_APP_NAME
