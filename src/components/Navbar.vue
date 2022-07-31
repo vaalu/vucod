@@ -51,7 +51,7 @@
 <script setup lang="ts">
 import { computed, getCurrentInstance } from 'vue'
 import { routes } from '@/router'
-import '../assets/styles/styles.css';
+import '../assets/styles/styles.css'
 
 // Import config from .env
 const appName = import.meta.env.VITE_APP_NAME

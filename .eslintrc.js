@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@antfu', 'plugin:storybook/recommended']
-};
+  extends: ['@antfu', 'plugin:storybook/recommended'],
+}
